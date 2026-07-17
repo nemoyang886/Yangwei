@@ -41,7 +41,9 @@
     const isClarified = planningBoard.classList.toggle('is-clarified');
     clarifyButton.setAttribute('aria-pressed', String(isClarified));
     if (clarifyLabel) {
-      clarifyLabel.textContent = isClarified ? '再放回原样' : '把问题理顺一点';
+      clarifyLabel.textContent = isClarified
+        ? clarifyButton.dataset.labelOn
+        : clarifyButton.dataset.labelOff;
     }
   });
 
