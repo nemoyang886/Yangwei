@@ -3,44 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1b2b">
-    <title>杨威 Leo｜一个还在慢慢更新的人</title>
+    <meta name="theme-color" content="#f4f2ec">
+    <title>杨威｜把难而正确的事，做久一点</title>
     <meta
       name="description"
-      content="杨威 Leo 的个人说明：一个武汉中年男人，做过体育教培与拳击培训，现在做保险，也在认真折腾 AI。"
+      content="杨威的个人介绍。武汉人，做过体育教培和创业，现在从事保险与大健康。喜欢运动，习惯把复杂问题理清楚，也愿意为重要的事情长期投入。"
     >
-    <meta property="og:title" content="杨威 Leo｜一个还在慢慢更新的人">
+    <meta property="og:title" content="杨威｜把难而正确的事，做久一点">
     <meta
       property="og:description"
-      content="快四十，武汉。做过体育教培和拳击培训，现在做保险，也在折腾 AI。这里没有标准简历，只是一些我确认过的自己。"
+      content="一个曾经排斥保险的人，因为一次亲身经历重新认识风险，也重新选择了自己的长期事业。"
     >
     <meta property="og:image" content="https://nemoyang886.github.io/Yangwei/assets/yangwei-profile.jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="zh_CN">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='17' fill='%230b1b2b'/%3E%3Cpath d='M12 43c13-2 15-22 27-22 7 0 10 6 13 14' fill='none' stroke='%23e64b42' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='42' cy='21' r='5' fill='%23f4c84a'/%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%233f5b50'/%3E%3Cpath d='M17 20l15 25 15-25M32 45V20' fill='none' stroke='%23f4f2ec' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <script>document.documentElement.classList.add('js');</script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
 
-    <div class="page-progress" aria-hidden="true">
-      <span class="page-progress__bar"></span>
-      <span class="page-progress__label">LONG VIEW</span>
-    </div>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
     <header class="site-header">
       <nav class="site-nav" aria-label="页面导航">
-        <a class="brand" href="#top" aria-label="返回页面顶部">
+        <a class="brand pressable" href="#top" aria-label="返回页面顶部">
           <span class="brand-mark">YW</span>
-          <span>杨威 <i>Leo</i></span>
+          <span class="brand-name">杨威</span>
         </a>
         <div class="nav-links">
-          <a href="#thread">这人</a>
-          <a href="#journey">来路</a>
-          <a href="#insurance">现在</a>
-          <a href="#evidence">最近</a>
-          <a href="#manual">相处</a>
+          <a class="pressable" href="#about">关于我</a>
+          <a class="pressable" href="#turning">转折</a>
+          <a class="pressable" href="#choice">选择</a>
+          <a class="pressable" href="#principles">做事</a>
+          <a class="pressable" href="#portfolio">长期投入</a>
         </div>
       </nav>
     </header>
@@ -48,381 +45,277 @@
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
-          <p class="eyebrow">YANG WEI · WUHAN · STILL UPDATING</p>
-          <h1 id="hero-title">你好，我是杨威。<em>还在</em>慢慢活明白。</h1>
+          <p class="eyebrow">YANG WEI · WUHAN</p>
+          <h1 id="hero-title">把难而正确的事，<em>做久一点。</em></h1>
           <p class="hero-lead">
-            快四十岁，武汉人。做过体育教培和拳击培训，现在做保险，也在认真折腾 AI。职业换过几次，人没怎么换：爱行动，爱琢磨，偶尔着急。看到一件事没理顺，通常会忍不住再看两眼。
+            你好，我是杨威。做过体育教培和创业，现在从事保险与大健康。喜欢运动，习惯把复杂问题理清楚，也愿意为重要的事情长期投入。
           </p>
-          <blockquote class="hero-note">
-            这不是逆袭故事。顶多算一个中年男人的使用说明，而且版本还在更新。
-          </blockquote>
+          <p class="hero-aside">我喜欢人，但不太喜欢场面话。比起把自己说得多厉害，我更在意答应的事情有没有下文。</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#thread">从头认识一下</a>
-            <a class="button button-quiet" href="#manual">直接看相处说明</a>
+            <a class="button button-primary pressable" href="#about">认识一下</a>
+            <a class="button button-secondary pressable" href="#turning">从那次意外说起</a>
           </div>
-          <ul class="identity-row" aria-label="个人身份关键词">
-            <li>武汉</li>
+          <ul class="identity-list" aria-label="个人关键词">
+            <li>武汉人</li>
             <li>拳击与 CrossFit</li>
+            <li>长期主义</li>
             <li>保险从业者</li>
-            <li>新工具爱好者</li>
           </ul>
         </div>
 
-        <div class="hero-visual reveal" aria-label="杨威个人肖像">
-          <div class="portrait-frame">
-            <img src="assets/yangwei-profile.jpg" alt="杨威的个人肖像" width="1080" height="1440">
-            <svg class="hero-thread" viewBox="0 0 620 700" aria-hidden="true">
-              <path class="thread-shadow" d="M-30 590 C 110 480, 165 720, 315 535 S 480 330, 685 350"></path>
-              <path class="thread-line" d="M-30 590 C 110 480, 165 720, 315 535 S 480 330, 685 350"></path>
-            </svg>
-            <span class="portrait-caption">以前每天看别人出拳。现在更多时候，是提醒自己别乱出拳。</span>
+        <div class="hero-portrait reveal" aria-label="杨威个人肖像">
+          <div class="portrait-halo" aria-hidden="true"></div>
+          <div class="portrait-card">
+            <img src="assets/yangwei-profile.jpg" alt="杨威的个人肖像" width="798" height="1200">
           </div>
-          <div class="not-resume" aria-hidden="true">
-            <span>PERSONAL NOTE</span>
-            <strong>本人，持续更新</strong>
+          <div class="portrait-note" aria-hidden="true">
+            <span>当前版本</span>
+            <strong>认真生活中</strong>
           </div>
         </div>
+
+        <a class="scroll-cue pressable" href="#about">
+          <span>继续往下</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 7l6 6 6-6"></path></svg>
+        </a>
       </section>
 
-      <section class="thesis section" id="thread" aria-labelledby="thread-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">先说几个不太正式的事实</p>
-          <h2 id="thread-title">比起职位，我更愿意这样介绍自己。</h2>
-        </div>
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <header class="section-heading reveal">
+          <p class="section-kicker">先认识我</p>
+          <h2 id="about-title">不从职位开始。</h2>
+          <p>我没有特别复杂的人设。认真工作，保持运动，对新东西有兴趣，对重要的人和事有耐心。</p>
+        </header>
 
-        <div class="thesis-grid">
-          <article class="thesis-card thesis-card-time reveal">
-            <p class="card-label"><span>01</span> 关于折腾</p>
-            <h3>我很容易对一个新工具产生感情。</h3>
-            <p>一开始只是想省十分钟，最后可能花两个小时把它做成一套流程。听起来不太划算，但下次确实快了。</p>
-            <div class="mini-dial" aria-hidden="true">
-              <span>先试</span><i></i><i></i><i></i><strong>再改</strong>
-            </div>
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <span class="card-index">01</span>
+            <p class="card-label">性格</p>
+            <h3>直接、务实，也愿意先听别人把话说完。</h3>
+            <p>我不太喜欢为了寒暄而寒暄。真有事情，坐下来聊清楚，关系反而更舒服。</p>
           </article>
-
-          <article class="thesis-card thesis-card-work reveal">
-            <p class="card-label"><span>02</span> 关于节奏</p>
-            <h3>我想做长期的事，也会忍不住着急。</h3>
-            <p>道理都懂，结果还是希望早点来。现在的练习，是着急的时候继续做事，别急着否定自己。</p>
-            <div class="pulse-list" aria-hidden="true">
-              <span>想快点</span><span>先别慌</span><span>做一步</span><span>再看看</span>
-            </div>
+          <article class="about-card about-card-dark reveal">
+            <span class="card-index">02</span>
+            <p class="card-label">兴趣</p>
+            <h3>拳击、CrossFit，还有认识有趣的人。</h3>
+            <p>脑子太满的时候，先让身体累一点。很多问题不一定马上解决，至少不会继续坐着瞎想。</p>
           </article>
-
-          <article class="thesis-card thesis-card-plan reveal">
-            <p class="card-label"><span>03</span> 关于行动</p>
-            <h3>我跟真人见面，比对着表格更容易进入状态。</h3>
-            <p>聊一件真实的事，帮朋友装个工具，或者一起解决一个麻烦，我通常很快就有动作。至于整理名单……明天也可以。</p>
-            <svg class="line-finder" viewBox="0 0 320 96" aria-hidden="true">
-              <path d="M10 47c28-48 44 45 73 1 30-44 42 44 72 0 31-45 47 44 75 2 23-34 38-22 80-22"></path>
-              <circle cx="309" cy="28" r="7"></circle>
-            </svg>
+          <article class="about-card reveal">
+            <span class="card-index">03</span>
+            <p class="card-label">做事</p>
+            <h3>先弄明白，再往前走。</h3>
+            <p>真正的问题是什么，哪些最重要，下一步从哪里开始。我习惯先把这些理顺。</p>
           </article>
         </div>
       </section>
 
-      <section class="journey section" id="journey" aria-labelledby="journey-title">
-        <div class="journey-intro reveal">
-          <p class="section-kicker">走过的路，不包装成升级打怪</p>
-          <h2 id="journey-title">换过几种工作，也换过几次看自己的角度。</h2>
-          <p>有些选择当时很笃定，后来发现也就那样。有些弯路走得不轻松，不过现在回头看，也没有哪一段完全白走。</p>
-        </div>
+      <section class="turning section-dark" id="turning" aria-labelledby="turning-title">
+        <div class="turning-inner">
+          <header class="turning-heading reveal">
+            <p class="section-kicker">一次认知转折</p>
+            <h2 id="turning-title">我以前，<br>真的很排斥保险。</h2>
+            <p>小时候，母亲买过一份理财类保险。当时没人把保障范围讲清楚，后来她因意外受伤，也没有得到预期中的理赔。从那以后，我听到保险，第一反应就是离远一点。</p>
+          </header>
 
-        <ol class="timeline" aria-label="杨威的经历主线">
-          <li class="timeline-item reveal">
-            <span class="timeline-marker">7+</span>
-            <div>
-              <p class="timeline-meta">更早 · 七年多销售与服务</p>
-              <h3>跟各种各样的人打交道</h3>
-              <p>那时没想过什么沟通方法论，就是不断见人、说话、碰壁，再慢慢明白：人嘴上问的，和心里担心的，经常不是一回事。</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-marker">5</span>
-            <div>
-              <p class="timeline-meta">五年 · 体育教培与拳击培训</p>
-              <h3>开馆、带课，也扛过经营压力</h3>
-              <p>拳击教会我的不只是出拳。状态不好也要训练，动作变形就重新来。创业则教会我，热爱和现金流最好同时在线。</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-marker">NOW</span>
-            <div>
-              <p class="timeline-meta">现在 · 转到保险行业</p>
-              <h3>快四十岁，又做了一次新人</h3>
-              <p>有焦虑，也有重新开始的新鲜感。很多东西还在学，很多关系要慢慢积累。以前教别人别怕挨拳，现在轮到自己练。</p>
-            </div>
-          </li>
-          <li class="timeline-item reveal">
-            <span class="timeline-marker">NEXT</span>
-            <div>
-              <p class="timeline-meta">同时 · AI、新工具和一堆小项目</p>
-              <h3>本来想省事，结果又开了一条支线</h3>
-              <p>写手册、做小网页、搭工作流、帮身边的人装工具。现在看来，AI 没让我少做事，只是让我更愿意把事情做完整。</p>
-            </div>
-          </li>
-        </ol>
-      </section>
+          <div class="story-grid">
+            <article class="story-date reveal" aria-label="时间 2024年10月">
+              <span>2024</span>
+              <strong>10月</strong>
+              <p>一次眼部意外，改变了后来很多事情。</p>
+            </article>
 
-      <section class="insurance section section-dark" id="insurance" aria-labelledby="insurance-title">
-        <div class="insurance-copy reveal">
-          <p class="section-kicker">现在的工作</p>
-          <h2 id="insurance-title">现在，我做保险。没什么神秘的。</h2>
-          <blockquote>
-            它不是我的全部，<br>
-            但确实让我更认真地看待<br>
-            时间、责任和一家人的日常。
+            <div class="story-steps">
+              <article class="story-step reveal">
+                <span class="story-number">01</span>
+                <div>
+                  <h3>右眼视网膜脱落</h3>
+                  <p>需要两次修复手术，前后休养三个月。医生也提醒，视力可能留下无法逆转的损伤。</p>
+                </div>
+              </article>
+              <article class="story-step reveal">
+                <span class="story-number">02</span>
+                <div>
+                  <h3>工作和运动一起停了</h3>
+                  <p>我正处在事业变动期，职工医保中断了几个月。手术费不能等，收入却没有平时那么稳定。</p>
+                </div>
+              </article>
+              <article class="story-step reveal">
+                <span class="story-number">03</span>
+                <div>
+                  <h3>那份没太在意的医疗险，派上了用场</h3>
+                  <p>它报销了一部分费用，没有解决所有问题，却让我在比较狼狈的时候少了一层现金流压力。</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <blockquote class="turning-quote reveal">
+            生活顺利时看不见的准备，出事的时候真的会派上用场。
           </blockquote>
-          <p>做了这行以后，我越来越能接受：很多重要决定没有标准答案。能做的，是先把情况听完整，不懂的查清楚，答应的事情留下记录。至于那些一句话就能解决人生问题的说法，我一直没学会。</p>
+        </div>
+      </section>
+
+      <section class="section choice" id="choice" aria-labelledby="choice-title">
+        <header class="section-heading reveal">
+          <p class="section-kicker">关于这次转行</p>
+          <h2 id="choice-title">我没有马上做决定。</h2>
+          <p>眼睛逐渐恢复以后，我先去查资料、看项目、想家里的事。转行可以重新开始，长期要做什么，还是得想清楚。</p>
+        </header>
+
+        <div class="choice-path" aria-label="作出职业选择前的三个思考角度">
+          <article class="choice-item reveal">
+            <span class="choice-dot" aria-hidden="true"></span>
+            <p class="card-label">家里</p>
+            <h3>父母的养老与健康，开始成为眼前的事。</h3>
+            <p>作为独生子女，这些安排迟早要面对，也很难交给别人替我考虑。</p>
+          </article>
+          <article class="choice-item reveal">
+            <span class="choice-dot" aria-hidden="true"></span>
+            <p class="card-label">研究</p>
+            <h3>我把养老、医疗和保险行业重新看了一遍。</h3>
+            <p>行业往哪里走，公司靠什么长期经营，我希望自己先看明白，再谈认同。</p>
+          </article>
+          <article class="choice-item reveal">
+            <span class="choice-dot" aria-hidden="true"></span>
+            <p class="card-label">实地</p>
+            <h3>养老社区、医院和大健康项目，我都去看了。</h3>
+            <p>泰康从2007年开始投入养老实体。需要长期资金和耐心的事，反而让我觉得踏实。</p>
+          </article>
         </div>
 
-        <div class="insurance-method reveal">
-          <ol class="method-steps">
-            <li><span>01</span><div><strong>我还在做新人</strong><p>这个事实没必要藏。专业不是把每句话都说得很满，而是知道什么时候该回去查。</p></div></li>
-            <li><span>02</span><div><strong>我不太喜欢制造焦虑</strong><p>让人害怕很容易，让人想清楚比较难。我宁愿做后面那件事。</p></div></li>
-            <li><span>03</span><div><strong>我会记住事情的后半段</strong><p>谈完、签完都不算故事结束。生活真遇到变化时，前面的安排才开始接受检验。</p></div></li>
-            <li><span>04</span><div><strong>我也会怀疑自己</strong><p>做得够不够好，积累是不是太慢。好在第二天通常还是会继续。</p></div></li>
+        <div class="choice-result reveal">
+          <p>现在</p>
+          <h3>培训结束后，我正式加入泰康。</h3>
+          <span>这不是一时兴起，是一次经过研究、实地了解和家庭思考后的长期选择。</span>
+        </div>
+      </section>
+
+      <section class="principles" id="principles" aria-labelledby="principles-title">
+        <div class="principles-inner">
+          <header class="principles-heading reveal">
+            <p class="section-kicker">我准备怎么做这份工作</p>
+            <h2 id="principles-title">信任很慢，也很贵。</h2>
+            <p>我完全理解别人对保险的犹豫，因为我以前也是这样。我没打算靠几句话改变谁，更愿意把事情一件件做清楚。</p>
+          </header>
+
+          <ol class="principle-list">
+            <li class="reveal">
+              <span>01</span>
+              <div>
+                <h3>先听懂，再建议</h3>
+                <p>先了解一个家庭现在面对什么问题，哪些风险需要先处理，哪些事情可以以后再说。</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>02</span>
+              <div>
+                <h3>能做什么，不能做什么，都讲清楚</h3>
+                <p>专业不是每句话都说得很满。遇到不确定的事情，我宁愿回去查，再给一个有依据的回答。</p>
+              </div>
+            </li>
+            <li class="reveal">
+              <span>03</span>
+              <div>
+                <h3>让关系比成交更长</h3>
+                <p>谈完、签完都不算结束。生活真的发生变化时，前面的安排才开始接受检验。</p>
+              </div>
+            </li>
           </ol>
-          <div class="no-list" aria-label="关于保险工作的个人备注">
-            <p>给这份工作的备注</p>
-            <span>不神化</span>
-            <span>不吓人</span>
-            <span>不编故事</span>
-            <span>不假装全懂</span>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-title">
+        <header class="portfolio-heading reveal">
+          <div>
+            <p class="section-kicker">我的长期账户</p>
+            <h2 id="portfolio-title">我在慢慢投入的<br>五件事。</h2>
+          </div>
+          <div class="portfolio-controls" aria-label="长期投入卡片控制">
+            <button class="icon-button pressable" type="button" data-carousel-prev aria-label="上一项">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>
+            </button>
+            <span class="portfolio-status" aria-live="polite"><strong>1</strong> / 5</span>
+            <button class="icon-button pressable" type="button" data-carousel-next aria-label="下一项">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg>
+            </button>
+          </div>
+        </header>
+
+        <div class="portfolio-viewport reveal" tabindex="0" aria-label="可左右拖动浏览五项长期投入">
+          <div class="portfolio-track">
+            <article class="investment-card investment-health">
+              <span class="investment-number">01</span>
+              <p class="card-label">健康</p>
+              <h3>身体是一切计划的底盘。</h3>
+              <p>继续运动，也认真对待身体发出的信号。经历过停下，才更知道能动是一件多好的事。</p>
+              <span class="card-mark" aria-hidden="true">+</span>
+            </article>
+            <article class="investment-card investment-relationship">
+              <span class="investment-number">02</span>
+              <p class="card-label">情感</p>
+              <h3>把时间留给值得珍惜的关系。</h3>
+              <p>朋友是我很宝贵的财富。关系不能只靠通讯录维护，见面、倾听和兑现承诺都需要时间。</p>
+              <span class="card-mark" aria-hidden="true">○</span>
+            </article>
+            <article class="investment-card investment-ability">
+              <span class="investment-number">03</span>
+              <p class="card-label">能力</p>
+              <h3>不只靠过去的经验生活。</h3>
+              <p>保持阅读和学习。遇到不懂的事情，先弄明白，再决定要不要相信。</p>
+              <span class="card-mark" aria-hidden="true">↗</span>
+            </article>
+            <article class="investment-card investment-wealth">
+              <span class="investment-number">04</span>
+              <p class="card-label">财富</p>
+              <h3>尊重积累，也尊重时间。</h3>
+              <p>我越来越相信复利。很多事情急不来，一点点做，反而更有机会走得远。</p>
+              <span class="card-mark" aria-hidden="true">⌁</span>
+            </article>
+            <article class="investment-card investment-kindness">
+              <span class="investment-number">05</span>
+              <p class="card-label">福报</p>
+              <h3>保持善意，也对家人负责。</h3>
+              <p>不辜负别人给我的信任。能帮的时候多做一点，重要的事情尽量别留到以后。</p>
+              <span class="card-mark" aria-hidden="true">∞</span>
+            </article>
+          </div>
+        </div>
+        <p class="drag-hint reveal">可以拖动卡片。状态一般的时候，也先把今天这一组做完。</p>
+      </section>
+
+      <section class="life" aria-labelledby="life-title">
+        <div class="life-inner">
+          <div class="life-copy reveal">
+            <p class="section-kicker">工作之外</p>
+            <h2 id="life-title">拳击让我专注，CrossFit 让我接受状态起伏。</h2>
+            <p>运动教我的事情很简单。动作不对就重来，今天状态一般，也可以先把这一组做完。</p>
+            <p>生活里能讲道理的时候，我还是尽量不动手。</p>
+          </div>
+          <div class="training-visual reveal" aria-hidden="true">
+            <span class="ring-line ring-line-one"></span>
+            <span class="ring-line ring-line-two"></span>
+            <span class="ring-line ring-line-three"></span>
+            <span class="training-count">01</span>
+            <strong>再来一组</strong>
+            <i></i>
           </div>
         </div>
       </section>
 
-      <section class="planning section" id="planning" aria-labelledby="planning-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">人设和真人之间，通常差一点诚实</p>
-          <h2 id="planning-title">把自己写成几个优点很容易，但不太像人。</h2>
-          <p>我身上很多特点都有另一面。长期主义会着急，执行力也会拖延，系统思维有时候只是文件夹建得比较快。</p>
+      <section class="closing" aria-labelledby="closing-title">
+        <div class="closing-inner reveal">
+          <p class="section-kicker">差不多就是这样</p>
+          <h2 id="closing-title">认真工作，保持运动，对重要的人和事有耐心。</h2>
+          <p>我不太擅长设计一个漂亮的人设。比起介绍自己，我更习惯相处久一点，让别人慢慢知道我是一个什么样的人。</p>
+          <a class="button button-primary pressable" href="#top">回到开头</a>
         </div>
-
-        <div class="planning-board reveal" id="planning-board">
-          <div class="signal-zone" aria-label="标准版自我介绍">
-            <p class="board-label">写进简历会是</p>
-            <div class="signal-cloud" aria-hidden="true">
-              <span class="signal signal-a">长期主义</span>
-              <span class="signal signal-b">行动力强</span>
-              <span class="signal signal-c">系统思维</span>
-              <span class="signal signal-d">学习能力</span>
-              <span class="signal signal-e">目标明确</span>
-              <span class="signal signal-f">善于复盘</span>
-              <span class="signal signal-g">持续成长</span>
-            </div>
-          </div>
-
-          <button
-            class="clarify-button"
-            type="button"
-            aria-pressed="false"
-            aria-controls="planning-board"
-            data-label-off="说得像本人一点"
-            data-label-on="切回标准说法"
-          >
-            <span>说得像本人一点</span>
-            <svg viewBox="0 0 52 20" aria-hidden="true"><path d="M1 10h44m-8-7 8 7-8 7"></path></svg>
-          </button>
-
-          <div class="route-zone" aria-label="更真实的个人说明">
-            <p class="board-label">真实一点会是</p>
-            <ol class="route-list">
-              <li><span>长期</span><p>想做长久的事，也会嫌结果来得慢</p></li>
-              <li><span>行动</span><p>见到真人就有动作，整理表格容易拖</p></li>
-              <li><span>系统</span><p>总想把事情理顺，也常常把系统越建越多</p></li>
-              <li><span>学习</span><p>新东西上手很快，被配置问题折腾也会烦</p></li>
-            </ol>
-          </div>
-        </div>
-
-        <p class="planning-quote reveal">人不是优点清单。能把自己的反面也认下来，说明书才算有点用。</p>
-      </section>
-
-      <section class="scales section" aria-labelledby="scales-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">切三个角度看看</p>
-          <h2 id="scales-title">我通常怎么和人、事情与新东西相处。</h2>
-        </div>
-
-        <div class="scale-switcher reveal">
-          <div class="scale-tabs" role="tablist" aria-label="选择认识角度">
-            <button id="tab-family" type="button" role="tab" aria-selected="true" aria-controls="panel-family" tabindex="0">跟人相处</button>
-            <button id="tab-person" type="button" role="tab" aria-selected="false" aria-controls="panel-person" tabindex="-1">做事的时候</button>
-            <button id="tab-system" type="button" role="tab" aria-selected="false" aria-controls="panel-system" tabindex="-1">遇到新东西</button>
-          </div>
-
-          <div class="scale-panel" id="panel-family" role="tabpanel" aria-labelledby="tab-family">
-            <div class="scale-visual family-map" aria-hidden="true">
-              <span class="map-person map-person-one"></span>
-              <span class="map-person map-person-two"></span>
-              <span class="map-person map-person-three"></span>
-              <i class="map-ring map-ring-one"></i>
-              <i class="map-ring map-ring-two"></i>
-              <b>见面聊</b>
-            </div>
-            <div class="scale-content">
-              <p class="scale-question">比起在通讯录里经营关系，我更喜欢真的见到这个人。</p>
-              <h3>聊点具体的，做点真实的，关系自然会往前走。</h3>
-              <ul><li>不太喜欢为了寒暄而寒暄</li><li>别人有事，我会比较容易进入状态</li><li>很多想法是在聊天里长出来的</li></ul>
-            </div>
-          </div>
-
-          <div class="scale-panel" id="panel-person" role="tabpanel" aria-labelledby="tab-person" hidden>
-            <div class="scale-visual person-workflow" aria-hidden="true">
-              <span>目标</span><span>材料</span><span>边界</span><span>下一步</span>
-              <svg viewBox="0 0 260 220"><path d="M32 54C118 2 127 128 221 67M35 170c70 43 118-65 190 4"></path></svg>
-            </div>
-            <div class="scale-content">
-              <p class="scale-question">我不太擅长只讨论方向，很快就会问下一步是什么。</p>
-              <h3>给我真实目标、真实材料和清楚边界，事情会推进得比较舒服。</h3>
-              <ul><li>不满意会直接提，也欢迎别人直接提</li><li>喜欢边做边看，不喜欢空转</li><li>做完最好留下点以后还能用的东西</li></ul>
-            </div>
-          </div>
-
-          <div class="scale-panel" id="panel-system" role="tabpanel" aria-labelledby="tab-system" hidden>
-            <div class="scale-visual system-grid" aria-hidden="true">
-              <span></span><span></span><span></span><span></span><span></span><span></span>
-              <svg viewBox="0 0 280 210"><path d="M44 53h77v45h95v61H87"></path><circle cx="44" cy="53" r="8"></circle><circle cx="216" cy="159" r="8"></circle></svg>
-            </div>
-            <div class="scale-content">
-              <p class="scale-question">我的常见开局是：先点开看看，说明书晚点再读。</p>
-              <h3>上手快、钻得深，偶尔还会为了省十分钟花两个小时。</h3>
-              <ul><li>AI、系统更新和新软件都容易让我兴奋</li><li>遇到问题会烦，但通常不会就此算了</li><li>真用顺手以后，很愿意教给身边的人</li></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="evidence section section-blue" id="evidence" aria-labelledby="evidence-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">最近桌面上经常开着的窗口</p>
-          <h2 id="evidence-title">它们不负责证明什么，只是我最近确实在忙这些。</h2>
-          <p>有工作，也有爱好；有已经做完的，也有越做越大的。后者通常更多。</p>
-        </div>
-
-        <div class="project-grid">
-          <a class="project-card project-card-guide reveal" href="https://nemoyang886.github.io/WorkBuddyGuide-Leo/" target="_blank" rel="noopener noreferrer">
-            <div class="project-visual visual-guide" aria-hidden="true">
-              <span class="book book-one"></span><span class="book book-two"></span><span class="book book-three"></span>
-              <i>27</i>
-            </div>
-            <p class="project-meta">一本越写越长的线上笔记</p>
-            <h3>WorkBuddyGuide-Leo</h3>
-            <p>一开始只是想给自己留个说明书，后来越写越多。现在里面有工作，也有不少「下次别再踩这个坑」。</p>
-            <span class="project-link">如果好奇，可以翻两页 ↗</span>
-          </a>
-
-          <article class="project-card project-card-product reveal">
-            <div class="project-visual visual-product" aria-hidden="true">
-              <div class="mini-window"><i></i><i></i><i></i><span></span><span></span><b></b></div>
-            </div>
-            <p class="project-meta">给自己做的一只数字小虾</p>
-            <h3>保小虾</h3>
-            <p>因为文件、笔记和选题太多，我做了一个内容工作台。它没有让我从此井井有条，但至少找东西快了一点。</p>
-            <span class="project-link project-link-muted">还在改，暂时不公开内部资料</span>
-          </article>
-
-          <article class="project-card project-card-course reveal">
-            <div class="project-visual visual-course" aria-hidden="true">
-              <span class="course-ring"></span><span class="course-dot dot-a"></span><span class="course-dot dot-b"></span><span class="course-dot dot-c"></span>
-              <strong>3h</strong>
-            </div>
-            <p class="project-meta">讲给别人听，也顺便检验自己</p>
-            <h3>两门 WorkBuddy 小课</h3>
-            <p>一门讲保险工作，一门从零开始。备课最诚实的地方是：哪一段讲不明白，通常就是自己还没真懂。</p>
-            <div class="project-actions">
-              <a href="https://nemoyang886.github.io/workbuddy-insurance-course-web/" target="_blank" rel="noopener noreferrer">保险工作那门 ↗</a>
-              <a href="https://nemoyang886.github.io/workbuddy-beginner-course-web/" target="_blank" rel="noopener noreferrer">从零开始那门 ↗</a>
-            </div>
-          </article>
-
-          <article class="project-card project-card-custom reveal">
-            <div class="project-visual visual-custom" aria-hidden="true">
-              <span>拳击</span><i></i><span>CrossFit</span><i></i><span>出汗</span>
-            </div>
-            <p class="project-meta">脑子太满的时候，先让身体累一点</p>
-            <h3>拳击和 CrossFit</h3>
-            <p>做过几年拳击培训，现在还会练。很多想不明白的事情，出一身汗不一定能解决，但至少不会继续坐在那里瞎想。</p>
-            <span class="project-link project-link-muted">这部分没有在线演示</span>
-          </article>
-
-          <a class="project-card project-card-share reveal" href="https://nemoyang886.github.io/ai-awareness-practice-share-web/" target="_blank" rel="noopener noreferrer">
-            <div class="project-visual visual-share" aria-hidden="true">
-              <span>人</span><span>判断</span><span>AI</span>
-              <svg viewBox="0 0 320 110"><path d="M18 73c75-2 61-49 133-36 60 11 66 54 151 14"></path></svg>
-            </div>
-            <p class="project-meta">最近脑子里经常转的一个问题</p>
-            <h3>AI 越能干，人还应该留下什么</h3>
-            <p>我现在的答案不复杂：判断、责任，还有最后那句「这件事算我的」。答案以后可能还会变。</p>
-            <span class="project-link">这里有一份当时的分享 ↗</span>
-          </a>
-
-          <article class="project-card project-card-service reveal">
-            <div class="project-visual visual-service" aria-hidden="true">
-              <span class="shield"></span><span class="service-line line-one"></span><span class="service-line line-two"></span><span class="service-line line-three"></span>
-            </div>
-            <p class="project-meta">桌面上最大的那个窗口</p>
-            <h3>保险工作</h3>
-            <p>客户记录、保单资料、见面前的准备和见面后的复盘。很多内容不会放到网上，它们更适合安静地待在该待的地方。</p>
-            <span class="project-link project-link-muted">这里不展示客户，也不讲产品</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="manual section" id="manual" aria-labelledby="manual-title">
-        <div class="section-heading reveal">
-          <p class="section-kicker">如果以后要一起相处或做事</p>
-          <h2 id="manual-title">这几条，可能比标准自我介绍更有用。</h2>
-        </div>
-
-        <div class="manual-grid">
-          <article class="manual-card manual-card-wide reveal">
-            <p>可以直接一点</p>
-            <h3>哪里不对、哪里不喜欢，直接告诉我。绕一圈比较客气，但也比较费时间。</h3>
-          </article>
-          <article class="manual-card manual-card-red reveal">
-            <p>最好说真问题</p>
-            <h3>不用把需求写成招标书，也不用先组织得很完整。</h3>
-            <span>真实材料和一句「我现在卡在这里」，通常就够了。</span>
-          </article>
-          <article class="manual-card reveal">
-            <p>我可能会多问两句</p>
-            <h3>不是抬杠。很多时候，第一句话只是比较容易说出口的那句。</h3>
-          </article>
-          <article class="manual-card reveal">
-            <p>不懂就是不懂</p>
-            <h3>我会回去查，也可能晚一点再回答。硬装懂这件事，成本通常更高。</h3>
-          </article>
-          <article class="manual-card manual-card-blue reveal">
-            <p>答应的事最好留个痕</p>
-            <h3>我喜欢记录下一步。不是因为记性差，虽然这也是一部分原因。</h3>
-          </article>
-          <article class="manual-card manual-card-wide manual-card-line reveal">
-            <p>最后一条</p>
-            <h3>我不是一直从容，也不是永远高效。只是大多数时候，第二天还愿意接着来。</h3>
-          </article>
-        </div>
-      </section>
-
-      <section class="closing section" aria-labelledby="closing-title">
-        <div class="closing-line" aria-hidden="true"></div>
-        <p class="section-kicker">差不多就是这样</p>
-        <h2 id="closing-title">保险、拳击、AI、焦虑、行动力，还有几个没整理完的文件夹。</h2>
-        <p>一个快四十岁的武汉男人，正在重新开始一份工作，也在继续练习怎么把日子过顺一点。</p>
-        <div class="closing-actions">
-          <a class="button button-primary" href="#top">回到开头</a>
-          <a class="button button-quiet" href="https://github.com/nemoyang886" target="_blank" rel="noopener noreferrer">我折腾过的东西在这里 ↗</a>
-        </div>
-        <p class="friend-note">这页以后应该还会改。人也会。先记录到这里。</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>杨威 Leo · 武汉 · 还在更新</p>
-      <p>这里关于保险的内容只是一份个人说明，不构成具体建议。其他部分，也不一定构成人生建议。</p>
-      <p class="footer-date">资料更新于 2026.07</p>
+      <p>杨威 · 武汉 · 持续更新</p>
+      <p>关于保险的内容是一份个人经历，不构成具体建议。</p>
+      <p>更新于 2026.07</p>
     </footer>
 
     <script src="script.js"></script>
