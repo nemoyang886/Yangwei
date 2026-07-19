@@ -5,6 +5,9 @@
   --surface-strong: #ffffff;
   --ink: #171918;
   --ink-soft: #343a36;
+  --night-surface: #171918;
+  --on-night: #ffffff;
+  --on-night-muted: rgba(255, 255, 255, 0.67);
   --muted: #686f6a;
   --green: #3f5b50;
   --green-dark: #253a32;
@@ -115,8 +118,8 @@ h3 {
   left: 0.75rem;
   padding: 0.65rem 0.9rem;
   border-radius: 0.75rem;
-  color: #fff;
-  background: var(--ink);
+  color: var(--on-night);
+  background: var(--night-surface);
   font-weight: 700;
   text-decoration: none;
   transform: translateY(-180%);
@@ -861,8 +864,8 @@ h3 {
 }
 
 .life {
-  color: #fff;
-  background: var(--ink);
+  color: var(--on-night);
+  background: var(--night-surface);
 }
 
 .life-inner {
@@ -879,7 +882,7 @@ h3 {
 .life-copy p:not(.section-kicker) {
   max-width: 40rem;
   margin-top: 1.5rem;
-  color: rgba(255, 255, 255, 0.67);
+  color: var(--on-night-muted);
   font-size: clamp(1rem, 1.7vw, 1.18rem);
 }
 
