@@ -1,0 +1,13 @@
+{
+  "scanned_at": "2026-07-20",
+  "framework": "vanilla-html",
+  "font_stack": "Apple system sans with PingFang SC fallbacks",
+  "palette": "warm paper, muted green ink, terracotta accent via CSS custom properties",
+  "motion": "vanilla JavaScript with IntersectionObserver and pointer-driven carousel; no motion library",
+  "spacing": "rem and clamp values without a named scale",
+  "preserve": [
+    "warm green and terracotta direction",
+    "real portrait asset",
+    "verified personal facts and low-promotion narrative"
+  ]
+}
