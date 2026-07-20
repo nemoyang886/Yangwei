@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light;
+
+  --color-paper: oklch(96% 0.014 90);
+  --color-paper-2: oklch(92% 0.018 95);
+  --color-ink: oklch(22% 0.018 145);
+  --color-ink-soft: oklch(36% 0.018 145);
+  --color-muted: oklch(45% 0.016 145);
+  --color-rule: oklch(80% 0.018 100);
+  --color-accent: oklch(48% 0.14 50);
+  --color-accent-soft: oklch(90% 0.04 50);
+  --color-focus: oklch(48% 0.16 50);
+  --color-selection: oklch(86% 0.055 50);
+
+  --font-display: "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+
+  --space-3xs: 0.125rem;
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 9rem;
+
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5625rem;
+  --text-xl: 1.9531rem;
+  --text-2xl: 2.4414rem;
+  --text-3xl: 3.0518rem;
+  --text-display: clamp(3rem, 8vw, 5.25rem);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-micro: 120ms;
+  --dur-short: 220ms;
+  --dur-long: 420ms;
+
+  --rule-hairline: 1px;
+  --radius-small: 0.25rem;
+  --radius-medium: 0.75rem;
+  --page-gutter: clamp(1rem, 4vw, 4rem);
+  --page-width: 74rem;
+  --prose-width: 42rem;
+
+  --z-base: 1;
+  --z-sticky: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-paper: oklch(16% 0.018 145);
+    --color-paper-2: oklch(20% 0.022 145);
+    --color-ink: oklch(93% 0.012 90);
+    --color-ink-soft: oklch(82% 0.014 90);
+    --color-muted: oklch(75% 0.014 110);
+    --color-rule: oklch(33% 0.02 145);
+    --color-accent: oklch(68% 0.12 50);
+    --color-accent-soft: oklch(28% 0.04 50);
+    --color-focus: oklch(72% 0.13 50);
+    --color-selection: oklch(36% 0.06 50);
+  }
+}
